@@ -1,34 +1,34 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-
   "name": "Asura Bot",
+  "theme": "mint",
+  "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "theme": "mint",
-
-  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#8B5CF6",
     "light": "#A78BFA",
     "dark": "#6D28D9"
   },
-  "topbarLinks": [
-    {
-      "name": "Servidor de Suporte",
-      "url": "https://discord.gg/CfkBZyVsd7"
+  "navbar": {
+    "links": [
+      {
+        "label": "Servidor de Suporte",
+        "href": "https://discord.gg/CfkBZyVsd7"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Adicionar ao Servidor",
+      "href": "https://discordapp.com/oauth2/authorize?client_id=470684281102925844&scope=applications.commands%20bot&permissions=8"
     }
-  ],
-  "topbarCtaButton": {
-    "name": "Adicionar ao Servidor",
-    "url": "https://discordapp.com/oauth2/authorize?client_id=470684281102925844&scope=applications.commands%20bot&permissions=8"
   },
   "navigation": {
-    "languages": [
+    "tabs": [
       {
-        "language": "pt-BR",
-        "default": true,
+        "tab": "Início",
         "groups": [
           {
             "group": "Início",

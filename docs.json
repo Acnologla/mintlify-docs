@@ -1,0 +1,61 @@
+{
+  "name": "Asura Bot",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#8B5CF6",
+    "light": "#A78BFA",
+    "dark": "#6D28D9",
+    "background": {
+      "dark": "#0F0A1E"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Servidor de Suporte",
+      "url": "https://discord.gg/asura"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Adicionar ao Servidor",
+    "url": "https://discord.com/oauth2/authorize"
+  },
+  "navigation": {
+    "languages": [
+      {
+        "language": "pt",
+        "default": true,
+        "groups": [
+          {
+            "group": "Início",
+            "pages": [
+              "pt/introducao"
+            ]
+          },
+          {
+            "group": "Guias",
+            "pages": [
+              "pt/galos",
+              "pt/economia",
+              "pt/tipos-de-luta",
+              "pt/itens-e-dungeons",
+              "pt/atributos-e-upgrades",
+              "pt/clan",
+              "pt/lootbox-pity-shop",
+              "pt/rinhas-ranqueadas",
+              "pt/cosmeticos"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "discord": "https://discord.gg/asura"
+    }
+  }
+}

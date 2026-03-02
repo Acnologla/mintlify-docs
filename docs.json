@@ -1,17 +1,15 @@
 {
   "name": "Asura Bot",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://cdn.discordapp.com/avatars/470684281102925844/e1dfb36e69e5b83f081f8ee3ba1adbd3.webp?size=512",
+    "dark": "https://cdn.discordapp.com/avatars/470684281102925844/e1dfb36e69e5b83f081f8ee3ba1adbd3.webp?size=512"
   },
+  "theme": "mint",
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#8B5CF6",
     "light": "#A78BFA",
-    "dark": "#6D28D9",
-    "background": {
-      "dark": "#0F0A1E"
-    }
+    "dark": "#6D28D9"
   },
   "topbarLinks": [
     {

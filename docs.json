@@ -1,4 +1,6 @@
 {
+  "$schema": "https://mintlify.com/docs.json",
+
   "name": "Asura Bot",
   "logo": {
     "light": "/logo/light.svg",
@@ -15,17 +17,17 @@
   "topbarLinks": [
     {
       "name": "Servidor de Suporte",
-      "url": "https://discord.gg/asura"
+      "url": "https://discord.gg/CfkBZyVsd7"
     }
   ],
   "topbarCtaButton": {
     "name": "Adicionar ao Servidor",
-    "url": "https://discord.com/oauth2/authorize"
+    "url": "https://discordapp.com/oauth2/authorize?client_id=470684281102925844&scope=applications.commands%20bot&permissions=8"
   },
   "navigation": {
     "languages": [
       {
-        "language": "pt",
+        "language": "pt-BR",
         "default": true,
         "groups": [
           {
@@ -52,7 +54,7 @@
   },
   "footer": {
     "socials": {
-      "discord": "https://discord.gg/asura"
+      "discord": "https://discord.gg/CfkBZyVsd7"
     }
   }
 }

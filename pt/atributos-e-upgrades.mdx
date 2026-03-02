@@ -1,75 +1,130 @@
 ---
 title: "Atributos e Upgrades"
-description: "Entenda os sistemas de Atributos e Upgrades que fortalecem todos os galos da sua conta."
+description: "Fortaleça todos os seus galos com o sistema de Atributos e Upgrades da sua conta."
 ---
 
 # Atributos e Upgrades
 
-Tanto os **Atributos** quanto os **Upgrades** são sistemas globais — eles afetam **todos os galos** da sua conta ao mesmo tempo, aumentando força, capacidade de progressão e muito mais.
+Atributos e Upgrades são sistemas **globais de conta** — eles afetam todos os seus galos simultaneamente, aumentando força, resistência, economia e progressão.
 
 ---
 
-## Upgrades
+## UserXP
 
-O sistema de Upgrades é baseado no seu **UserXP** — uma pontuação separada do XP do seu galo.
+O **UserXP** é o XP da sua conta (não do galo) e é a base de ambos os sistemas.
 
-### Como Ganhar UserXP
+- Você ganha **1 UserXP por vitória** nos treinos
+- Clans com o buff desbloqueado concedem **+1 UserXP** adicional por treino
+- Também pode ser obtido comprando no site ou na loja do jogo com Gold
+- Use `j!money` para ver seu UserXP atual
 
-Por padrão, você ganha **1 UserXP por vitória** nos treinos. Esse valor pode ser aumentado com certos itens e buffs.
-
-Visualize seu UserXP e saldo geral com `j!money`.
-
-### Árvores de Upgrades
-
-Os upgrades são divididos em **3 árvores de passivas**:
-
-<CardGroup cols={3}>
-  <Card title="Utilitários" icon="wrench">
-    Upgrades que melhoram aspectos gerais da sua conta, como ganho de recursos.
-  </Card>
-  <Card title="Vida" icon="heart">
-    Upgrades focados em aumentar a sobrevivência do seu galo.
-  </Card>
-  <Card title="Esquiva" icon="wind">
-    Upgrades que aumentam a chance de desviar de ataques.
-  </Card>
-</CardGroup>
-
-<Info>
-  Use `j!upgrades` para visualizar, alocar pontos e acompanhar seu progresso. Para ver **todos** os upgrades disponíveis em todas as árvores, acesse o **Site Oficial do Bot**.
-</Info>
+<Tip>
+  O UserXP também é necessário para fazer trades — quanto mais raro o item, maior o UserXP exigido.
+</Tip>
 
 ---
 
 ## Atributos
 
-O sistema de Atributos permite personalizar seu galo com pontos livres, alocados onde você preferir.
+Os Atributos são pontos permanentes que você distribui livremente para fortalecer seu galo.
 
-### Como Ganhar Pontos de Atributos
+**Como ganhar:** 1 ponto de Atributo a cada **100 UserXP**.
 
-Você ganha **1 ponto de Atributo a cada 100 UserXP** acumulados.
+Use `j!atributos` para visualizar e alocar seus pontos.
 
-### Como Usar
+<img src="/imagens/atributos.jpg" alt="Tela de Atributos" />
 
-<Steps>
-  <Step title="Visualize seus Pontos">
-    Use `j!atributos` para ver quantos pontos você tem disponíveis e onde os alocou.
-  </Step>
-  <Step title="Aloque seus Pontos">
-    Distribua os pontos nos atributos que mais fazem sentido para o seu estilo de jogo!
-  </Step>
-</Steps>
+### Lista de Atributos
+
+<AccordionGroup>
+  <Accordion title="Vida Extra" icon="heart">
+    Aumenta sua vida base total.
+    Ideal para builds focadas em sobrevivência e resistência.
+  </Accordion>
+
+  <Accordion title="Dano Extra" icon="sword">
+    Aumenta o dano percentual de todos os seus ataques diretos.
+  </Accordion>
+
+  <Accordion title="Sorte" icon="clover">
+    Aumenta a probabilidade de ativação de efeitos, críticos e mecânicas baseadas em chance.
+    Excelente para builds de efeito e controle.
+  </Accordion>
+
+  <Accordion title="Dano em Efeitos" icon="fire">
+    Aumenta o dano causado por efeitos como queimadura, veneno, ácido, plasma, entre outros.
+  </Accordion>
+
+  <Accordion title="Regeneração" icon="rotate-right">
+    Recupera vida automaticamente a cada turno de batalha.
+  </Accordion>
+
+  <Accordion title="Defesa" icon="shield">
+    Reduz o dano direto recebido de ataques.
+  </Accordion>
+
+  <Accordion title="Treinos Extras" icon="plus">
+    Permite realizar mais treinos por dia além do limite base.
+  </Accordion>
+
+  <Accordion title="Cura Extra" icon="plus-circle">
+    Aumenta a eficácia de qualquer efeito de cura.
+  </Accordion>
+
+  <Accordion title="Defesa de Efeitos" icon="shield-halved">
+    Reduz o dano causado por efeitos como veneno, chamas, ácido e stun com dano.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Upgrades
+
+Os Upgrades são melhorias permanentes desbloqueadas ao atingir determinadas quantidades de UserXP.
+
+- O **primeiro upgrade** é liberado ao atingir um valor inicial de UserXP
+- Use `j!upgrades` para ver disponíveis e seu progresso
+- Use `j!upgrade [número]` para ativar um upgrade específico
+
+### Árvores de Upgrades
+
+<CardGroup cols={2}>
+  <Card title="Economia e Progressão" icon="coins">
+    Upgrades que aumentam XP por treino, Gold por rinha, recompensas de missões e número de treinos extras por dia.
+  </Card>
+  <Card title="Sorte e Lootbox" icon="box-open">
+    Upgrades que aumentam as chances de obter galos raros, épicos e lendários em Lootboxes, e melhoram habilidades baseadas em probabilidade.
+  </Card>
+  <Card title="Buffs de Vida" icon="heart">
+    Upgrades que aumentam sua vida inicial em batalha em múltiplos níveis.
+  </Card>
+  <Card title="Buffs de Dano" icon="sword">
+    Upgrades que adicionam dano fixo por ataque em múltiplos níveis.
+  </Card>
+  <Card title="Buffs de Efeitos" icon="fire">
+    Upgrades que aumentam o dano causado por efeitos passivos em batalha.
+  </Card>
+  <Card title="Regeneração e Degeneração" icon="rotate">
+    Recupere vida a cada ataque ou faça o oponente perder vida passivamente.
+  </Card>
+  <Card title="Esquiva" icon="wind">
+    Upgrades que concedem chance de esquivar de ataques e, nos níveis mais altos, também de efeitos.
+  </Card>
+  <Card title="Críticos" icon="bolt">
+    Upgrades que concedem chance de causar ataques críticos e aumentam o multiplicador de dano crítico.
+  </Card>
+  <Card title="Debuffs no Oponente" icon="skull">
+    Upgrades do tipo Voodoo (oponente começa com menos vida) e Fraqueza (oponente começa em nível mais baixo).
+  </Card>
+</CardGroup>
 
 ---
 
 ## Resumo dos Comandos
 
-| Comando        | Função                                          |
-|----------------|-------------------------------------------------|
-| `j!upgrades`   | Ver, alocar e acompanhar progresso de upgrades  |
-| `j!atributos`  | Ver e alocar pontos de atributos                |
-| `j!money`      | Ver seu UserXP atual e saldo de recursos        |
-
-<Tip>
-  Planeje bem onde alocar seus pontos de atributo — uma vez distribuídos, pode ser necessário usar itens especiais para redistribuí-los!
-</Tip>
+| Comando              | Função                                         |
+|----------------------|------------------------------------------------|
+| `j!upgrades`         | Ver e acompanhar progresso de upgrades         |
+| `j!upgrade [número]` | Ativar um upgrade específico                   |
+| `j!atributos`        | Ver e alocar pontos de atributos               |
+| `j!money`            | Ver seu UserXP, Gold e AsuraCoins              |

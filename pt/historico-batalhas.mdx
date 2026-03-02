@@ -1,0 +1,83 @@
+---
+title: "Histórico e Estatísticas de Batalha"
+description: "Acompanhe seu desempenho recente e analise suas estatísticas de combate."
+---
+
+# Histórico e Estatísticas de Batalha
+
+O Asura Bot oferece dois sistemas para acompanhar e analisar seu desempenho em batalhas.
+
+---
+
+## Histórico de Batalhas
+
+O Histórico registra suas lutas mais recentes, mostrando resultado, modo de jogo, duração em turnos e tempo decorrido.
+
+<img src="/imagens/battlehistory.png" alt="Histórico de Batalhas" />
+
+### Formato de Exibição
+
+```
+Nome do seu galo ⚔️ Nome do oponente
+┗ Resultado • Modo • Turnos • Tempo decorrido
+```
+
+**Exemplo:**
+```
+Nephilim ⚔️ Phoenix
+┗ Vitória • Survival • 0 turnos • 2h atrás
+```
+
+### O que cada campo indica?
+
+| Campo          | O que revela                                                        |
+|----------------|---------------------------------------------------------------------|
+| **Resultado**  | Vitória ou Derrota — permite identificar streaks                    |
+| **Modo**       | O tipo de batalha (Survival, Arena, Ranked, etc.)                   |
+| **Turnos**     | Duração da luta — 0 turnos = vitória instantânea; muitos turnos = build tank |
+| **Tempo**      | Quando a batalha ocorreu                                            |
+
+<Tip>
+  Vitórias em 0 turnos indicam uma build **extremamente ofensiva** com alto dano inicial. Muitos turnos indicam uma build de resistência ou controle.
+</Tip>
+
+---
+
+## Estatísticas de Batalha
+
+As Estatísticas apresentam um panorama completo do seu desempenho nos **últimos 7 dias**.
+
+<img src="/imagens/battlestats.png" alt="Estatísticas de Batalha" />
+
+### O que você pode analisar?
+
+<CardGroup cols={2}>
+  <Card title="Resumo Geral" icon="chart-bar">
+    Total de batalhas, vitórias, derrotas, taxa de vitória e média de rounds por partida.
+  </Card>
+  <Card title="Batalhas ao Longo do Tempo" icon="chart-line">
+    Gráfico temporal que mostra picos de atividade, frequência de batalhas e períodos de farm intenso.
+  </Card>
+  <Card title="Galos Mais Usados" icon="egg">
+    Quais galos você mais usa em batalhas, indicando seu galo principal e dependências de build.
+  </Card>
+  <Card title="Derrotas por Tipo" icon="skull">
+    Quais tipos de galos causaram mais derrotas — excelente para identificar **counters** do seu build.
+  </Card>
+</CardGroup>
+
+---
+
+## Como Usar as Estatísticas Estrategicamente
+
+O sistema de Histórico + Estatísticas permite:
+
+- **Monitorar evolução pessoal** ao longo do tempo
+- **Identificar counters** — descubra quais tipos batem mais no seu galo
+- **Ajustar builds** com base nos padrões de derrota
+- **Detectar metas dominantes** no servidor
+- **Melhorar tomada de decisão** antes de entrar em modos ranqueados
+
+<Info>
+  Se você está perdendo muito para um tipo específico, considere ajustar sua skillset ou itens para contrabalançar antes de entrar na ranqueada.
+</Info>

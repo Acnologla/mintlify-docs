@@ -1,60 +1,68 @@
 ---
 title: "Tipos de Luta"
-description: "Conheça todos os modos de batalha: treinos, arena, ranked, raid, server battle e tower."
+description: "Conheça todos os modos de batalha: treinos, arena, ranked, raid, torneio, portal, história e muito mais."
 ---
 
 # Tipos de Luta
 
-Existem vários modos de batalha no Asura Bot, cada um com suas regras, recompensas e desafios únicos.
+O Asura Bot oferece uma grande variedade de modos de batalha, cada um com suas próprias regras, recompensas e estratégias.
+
+<img src="/imagens/cooldowns.jpg" alt="Cooldowns dos modos de batalha" />
+
+---
+
+## Rinha
+
+Um duelo direto contra outro usuário.
+
+- **Comando:** `j!rinha`
+- Modo livre, sem custo de ingresso
+
+---
 
 ## Treino
 
-O modo mais básico e fundamental do jogo.
+O modo mais fundamental e a principal fonte de progressão diária.
 
 - **Comando:** `j!train`
-- **Recompensas:** XP e Gold por vitória
-- **Limite diário:** 280 vitórias
-- **Bônus:** chance de ganhar **Chaves de Raid** durante os treinos
+- **Recompensas:** Gold, XP, XP do Passe, XP do Pet, XP do Clan, UserXP, progresso de PowerUp e chance de Chaves de Raid
+- Há um **limite diário de treinos** que pode ser expandido via Atributos, Upgrades e buffs de Clan
 
 ---
 
 ## Arena
 
-Um modo competitivo onde você enfrenta outros jogadores reais.
-
-<Info>
-  **Comando:** `j!arena ingresso` | **Custo:** 200 Gold
-</Info>
+Modo competitivo contra outros jogadores reais com limite de vitórias e derrotas.
 
 <Steps>
-  <Step title="Entre na Fila">
-    Use `j!arena ingresso` para comprar um ingresso e entrar na fila da Arena.
+  <Step title="Compre um Ingresso">
+    Use `j!arena buy default` ou `j!arena buy hard` para entrar. Custa uma quantidade de Gold por ingresso.
   </Step>
   <Step title="Batalhe">
-    Você lutará contra outros jogadores que usaram o mesmo comando. Cada vitória conta!
+    Use `j!arena battle` para lutar. Você enfrenta outros jogadores que também compraram ingresso.
   </Step>
-  <Step title="Conquiste a Recompensa">
-    Vença **12 vezes** para garantir a grande recompensa da Arena.
+  <Step title="Recompensa Final">
+    Vença o número máximo de lutas para garantir a grande recompensa, que inclui Gold, XP e acesso ao **Shop da Arena**.
 
     <Warning>
-      Você pode perder no máximo **3 lutas** antes de ser eliminado!
+      Você tem um limite máximo de **derrotas** antes de ser eliminado. Se perder demais, o ingresso é perdido!
     </Warning>
   </Step>
 </Steps>
+
+**Dificuldades:** Default e Hard
+**Comandos:** `j!arena buy default|hard` · `j!arena status` · `j!arena battle` · `j!arena shop`
 
 ---
 
 ## Ranked (Rinhas Ranqueadas)
 
-O modo ranqueado oficial, onde cada vitória aumenta seu **Elo** e te leva para ranks mais altos.
+Modo ranqueado com sistema de Elo. Você pode enfrentar jogadores reais ou bots baseados em jogadores reais.
 
-- **Comando:** `j!ranked battle`
-- Requer que outros jogadores usem o comando ao mesmo tempo
-- A cada rank conquistado, você recebe **grandes recompensas**
+- **Comandos:** `j!ranked battle` · `j!ranked view` · `j!ranked rank`
+- Recompensas a cada rank conquistado
 
-<Tip>
-  Veja a página [Rinhas Ranqueadas](/pt/rinhas-ranqueadas) para detalhes completos sobre o sistema de Elo e Ranks.
-</Tip>
+Veja a página [Rinhas Ranqueadas](/pt/rinhas-ranqueadas) para detalhes completos.
 
 ---
 
@@ -62,37 +70,99 @@ O modo ranqueado oficial, onde cada vitória aumenta seu **Elo** e te leva para 
 
 Enfrente bosses poderosos junto com seus amigos!
 
-<Info>
-  **Comando:** `j!raid` | Use as **Chaves de Raid** ganhas nos treinos para participar.
-</Info>
+| Detalhe      | Informação                                       |
+|--------------|--------------------------------------------------|
+| Jogadores    | Até **5** (incluindo o dono)                     |
+| Boss         | Raridade definida pela chave usada               |
+| Recompensas  | XP e Gold divididos entre todos; Shard da raridade da Raid para o dono |
 
-| Detalhe         | Informação                              |
-|-----------------|------------------------------------------|
-| Jogadores       | Até **4 amigos** por Raid               |
-| Boss            | Raridade do boss = raridade da chave     |
-| Recompensas     | XP e Gold ao final de cada etapa         |
+- **Comando:** `j!raid`
+- As **Chaves de Raid** são obtidas nos treinos e no Galinheiro
 
 ---
 
 ## Server Battle
 
-Um evento especial que acontece automaticamente em servidores ativos.
+Evento automático que aparece em canais movimentados.
 
-- Um **galo enfurecido** aparece em canais movimentados
-- Até **10 pessoas** podem batalhar juntas contra ele
-- **Recompensas para todos:** 180 XP + 400 Gold
-
-<Note>
-  Ative esse evento no seu servidor com `j!config`.
-</Note>
+- Até **10 jogadores** podem participar juntos
+- Recompensas de XP e Gold fixas para todos os membros
+- Ative no seu servidor com `j!config`
 
 ---
 
-## Tower (Torre Semanal)
+## Tower (Torre)
 
-Um desafio progressivo e semanal que testa o limite do seu galo.
+Modo **semanal** com 201 andares progressivos.
 
-- Modo **semanal** — reinicia toda semana
-- Você batalha contra galos cada vez mais fortes a cada andar
-- Recompensas a cada **5 andares** concluídos
-- Quanto mais alto você chegar, melhores as recompensas!
+- Apenas **uma tentativa por semana**
+- Recompensas a cada 5 andares, a partir do 6º
+- **Comandos:** `j!tower rank` · `j!tower info` · `j!tower battle`
+
+---
+
+## Torneio
+
+Eventos criados **automaticamente a cada 2 horas** durante o dia.
+
+- Duração de cerca de 75 minutos, sem aparecer no período de madrugada
+- Todos os jogadores recebem galos, itens e pets com as **mesmas condições** (raridade, nível e resets iguais)
+- Recompensas para o **Top 3**
+- Você pode apostar Gold em jogadores com `j!tournament bet`
+- **Comandos:** `j!tournament view` · `j!tournament info` · `j!tournament battle` · `j!tournament bet`
+
+---
+
+## Portal
+
+Eventos em grupo que surgem **aleatoriamente** nos servidores.
+
+- Devem ser feitos em grupo — sozinho é muito difícil
+- Duração limitada, com tempo de respawn entre portais
+- É necessário vencer uma porcentagem dos inimigos para receber recompensas
+- Não aparecem no período de madrugada
+- **Comandos:** `j!portal view` · `j!portal info` · `j!portal battle`
+
+---
+
+## História
+
+<img src="/imagens/history.png" alt="Modo História" />
+
+Atualmente com **6 atos**, cada um com capítulos únicos e progressivamente mais difíceis.
+
+- Recompensas ao concluir capítulos com **mínimo de 3 estrelas**
+- Perder batalhas reduz a quantidade de estrelas ganhas
+- **Comandos:** `j!history view` · `j!history chapter` · `j!history battle`
+
+---
+
+## Challenge
+
+Desafio periódico renovado a cada 2 dias.
+
+- Cada desafio possui um número fixo de batalhas
+- Há um limite máximo de **derrotas** — se ultrapassar, é possível comprar novo ingresso
+- **Recompensas:** Gold, XP, Lootboxes, AsuraCoins e Runas
+- **Comandos:** `j!challenge info` · `j!challenge view`
+
+---
+
+## Boss
+
+Um boss com **várias formas**, cada vez mais forte.
+
+- **Comando:** `j!boss`
+- Possui cooldown entre usos
+- **Recompensas:** XP, AsuraCoins, Lootboxes e Chaves
+
+---
+
+## Survival
+
+Modo de sobrevivência onde as recompensas crescem a cada vitória.
+
+- Quanto mais você avança, maior o prêmio ao final
+- Obtido ao acumular vitórias consecutivas
+- Os [Consumíveis](/pt/consumiveis) são obtidos exclusivamente nesse modo
+- **Comando:** `j!survival battle`

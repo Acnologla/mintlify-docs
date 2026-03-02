@@ -5,28 +5,59 @@ description: "Aprenda como ganhar e gastar Gold, AsuraCoins e outros recursos do
 
 # Economia
 
-O sistema econômico do Asura Bot gira em torno do **Gold**, a moeda principal do jogo. Saber como gerenciá-lo bem é essencial para crescer.
+O sistema econômico do Asura Bot gira em torno do **Gold**, a moeda principal do jogo. Quanto mais você joga e diversifica suas atividades, mais Gold acumula.
+
+<Info>
+  VIPs têm buff em quase todos os tipos de ganho de Gold no jogo.
+</Info>
 
 ## Como Ganhar Gold
 
 <AccordionGroup>
   <Accordion title="Treinos (j!train)" icon="dumbbell" defaultOpen>
-    Por padrão, cada **vitória nos treinos** concede **6 Gold**. Esse valor pode ser aumentado através de:
-
+    Cada vitória nos treinos concede Gold. Esse valor pode ser aumentado com:
     - Certos **Upgrades** da árvore de passivas
-    - **Buffs de Clan** (disponíveis a partir de certo nível do clan)
+    - **Buffs de Clan** (desbloqueados conforme o clan sobe de nível)
   </Accordion>
 
   <Accordion title="Recompensa Diária (j!daily)" icon="calendar">
-    Use `j!daily` uma vez por dia para resgatar sua recompensa diária de Gold.
+    Use `j!daily` uma vez por dia para resgatar sua recompensa de Gold e XP.
   </Accordion>
 
   <Accordion title="Missões (j!mission)" icon="list-check">
-    Complete missões para ganhar Gold e outros recursos. Veja suas missões ativas com `j!mission`.
+    Complete missões para ganhar Gold e XP. Cada missão concluída entrega suas recompensas automaticamente.
   </Accordion>
 
-  <Accordion title="Raids" icon="shield">
-    Participar de **Raids** com amigos é uma ótima fonte de Gold e XP. Veja mais detalhes na página de [Tipos de Luta](/pt/tipos-de-luta).
+  <Accordion title="Raids (j!raid)" icon="shield">
+    Participe de Raids com amigos — cada etapa concluída distribui Gold e XP para todos os participantes.
+  </Accordion>
+
+  <Accordion title="Survival (j!survival battle)" icon="heart">
+    A cada vitória no Survival, a recompensa final acumula. Quanto mais você avança, maior o Gold e XP ao fim.
+  </Accordion>
+
+  <Accordion title="Tower (j!tower battle)" icon="building">
+    Em determinados andares da Torre, você ganha Gold e XP como recompensa de progressão.
+  </Accordion>
+
+  <Accordion title="Contrato (j!contract create)" icon="file-signature">
+    Crie contratos e complete tarefas em troca de Gold, Chaves (conforme a raridade) e XP.
+  </Accordion>
+
+  <Accordion title="Expedição (j!expedition)" icon="compass">
+    Deixe seu galo em expedição por um período e receba itens, Shards e cosméticos ao retornar.
+  </Accordion>
+
+  <Accordion title="Vender (j!sell / j!lootbox sell)" icon="tag">
+    Venda galos, itens ou lootboxes diretamente para converter em Gold.
+  </Accordion>
+
+  <Accordion title="Store (j!store manage)" icon="store">
+    Coloque seus itens à venda na loja do servidor para outros jogadores comprarem.
+  </Accordion>
+
+  <Accordion title="Conquest (j!conquest battle)" icon="flag">
+    Conquiste masmorras com seu clan para gerar Gold para os membros.
   </Accordion>
 </AccordionGroup>
 
@@ -34,16 +65,22 @@ O sistema econômico do Asura Bot gira em torno do **Gold**, a moeda principal d
 
 <CardGroup cols={2}>
   <Card title="Lootboxes" icon="box-open">
-    Compre, visualize e abra lootboxes com os comandos `j!lootbox buy`, `j!lootbox view` e `j!lootbox open`.
+    Compre, visualize e abra lootboxes com `j!lootbox buy`, `j!lootbox view` e `j!lootbox open`.
   </Card>
   <Card title="Trocar Nome" icon="pencil">
     Mude o nome do seu galo com `j!changename`.
   </Card>
   <Card title="Arena" icon="sword">
-    Compre um ingresso para a Arena por **200 Gold** com `j!arena ingresso`.
+    Compre ingressos para a Arena com `j!arena buy`.
   </Card>
   <Card title="Clan" icon="users">
-    Crie um clan por **1.000 Gold** ou compre upgrades para o seu clan.
+    Crie um clan ou compre upgrades para ele com `j!clan upgrade`.
+  </Card>
+  <Card title="Shop / Arena Shop / Store" icon="shopping-cart">
+    Compre itens no `j!shop`, na loja da Arena (`j!arena shop`) ou na Store do servidor.
+  </Card>
+  <Card title="Apostas" icon="dice">
+    Aposte Gold em duelos via `j!bet` ou em jogadores no `j!tournament bet`.
   </Card>
 </CardGroup>
 
@@ -52,11 +89,11 @@ O sistema econômico do Asura Bot gira em torno do **Gold**, a moeda principal d
 Você pode enviar Gold para outros jogadores usando `j!givemoney`.
 
 <Info>
-  **Limites de transferência:**
-  - Mínimo por envio: **120 Gold**
-  - Máximo por dia: **9.999 Gold**
+  Existe um **valor mínimo** e um **valor máximo** por transferência a cada 2 dias. Jogadores com **VIP** têm o limite máximo **3 vezes maior** que o padrão.
 </Info>
 
 ## Visualizar seu Saldo
 
-Use `j!money` para ver seu saldo atual de **Gold**, **AsuraCoins** e outras informações financeiras da sua conta.
+Use `j!money` para ver seu saldo atual de **Gold**, **AsuraCoins**, **Treinos** disponíveis e **UserXP**.
+
+<img src="/imagens/profile.jpg" alt="Tela de perfil com saldo" />

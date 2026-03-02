@@ -1,45 +1,40 @@
 ---
 title: "Galos"
-description: "Tudo sobre os galos, raridades, habilidades, resets e evoluções."
+description: "Tudo sobre raridades, habilidades, resets e evolução dos galos."
 ---
 
 # Galos
 
-Existem vários galos no bot, cada um com diferentes **raridades** e **habilidades** que você vai conhecer ao longo do tempo.
+Existem vários galos no bot, cada um com diferentes **raridades** e **habilidades**. A força de um galo depende de múltiplos fatores que você vai dominando ao longo do tempo.
+
+<img src="/imagens/galo.jpg" alt="Exemplo de galo" />
 
 ## Raridades
 
-Cada raridade possui uma borda visual única que identifica o poder do galo:
+Existem **7 raridades** de galos, cada uma com uma borda visual única:
 
-<CardGroup cols={3}>
-  <Card title="Comum" icon="circle">
-    Borda **Cinza** — o ponto de partida de todo jogador.
-  </Card>
-  <Card title="Raro" icon="circle">
-    Borda **Azul** — um pouco mais forte e incomum.
-  </Card>
-  <Card title="Épico" icon="circle">
-    Borda **Roxa** — galos com grande potencial.
-  </Card>
-  <Card title="Lendário" icon="circle">
-    Borda **Amarela** — galos poderosos e raros.
-  </Card>
-  <Card title="Mítico" icon="circle">
-    Borda **Branca** — força quase incomparável.
-  </Card>
-  <Card title="Divino" icon="circle">
-    Borda **Magenta** — o ápice do poder.
-  </Card>
-</CardGroup>
+| Raridade  | Borda        |
+|-----------|-------------|
+| Comum     | Cinza        |
+| Raro      | Azul         |
+| Épico     | Roxo         |
+| Lendário  | Laranja      |
+| Especial  | Vermelho     |
+| Mítico    | Colorida     |
+| Divino    | Magenta      |
 
-## O que determina a força de um Galo?
+<Info>
+  Quanto maior a raridade, maior o potencial base do galo — mas resets, skills e itens também influenciam muito o poder final.
+</Info>
 
-A força de um galo depende de vários fatores combinados:
+## O que Determina a Força de um Galo?
 
-- **Raridade** — galos mais raros têm atributos base maiores.
-- **Resets** — cada reset aumenta o poder do galo.
-- **Skills (Habilidades)** — o conjunto de habilidades equipadas.
-- **Nível** — quanto mais alto o nível, mais forte.
+- **Raridade** — atributos base maiores em raridades mais altas
+- **Resets** — aumentam progressivamente o poder do galo
+- **Skills** — o conjunto de habilidades equipadas
+- **Nível** — quanto mais alto, mais forte
+- **Itens equipados** — modificam dano, vida e outros atributos
+- **Atributos e Upgrades de conta** — afetam todos os seus galos
 
 ## Habilidades (Skills)
 
@@ -47,33 +42,37 @@ A força de um galo depende de vários fatores combinados:
   Use `j!skills` para visualizar, gerenciar e equipar as habilidades do seu galo.
 </Info>
 
-Cada galo pode equipar habilidades para criar **skillsets** específicas, adaptando-o para diferentes situações de batalha. Para alterar suas habilidades basta usar `j!skills` e escolher a que deseja equipar.
+Cada galo pode equipar habilidades para criar **skillsets** específicas, adaptando-o para diferentes situações de batalha. Combinações bem pensadas fazem toda a diferença na competição.
 
 ## Sistema de Resets
 
-O sistema de resets é o principal mecanismo de progressão de longo prazo do seu galo.
+O reset é o principal mecanismo de progressão de longo prazo do seu galo.
 
 <Steps>
   <Step title="Requisito">
-    Para resetar, seu galo precisa atingir o **nível 35**. Ao chegar lá, o botão **Upgrade** aparecerá no `j!galo`.
+    Seu galo precisa atingir o **nível 35** para o primeiro reset. O botão **Upgrade** aparecerá no `j!galo`.
+
+    <Note>
+      A cada conjunto de resets, o nível necessário para o próximo reset aumenta. Galos virgens (sem nenhum reset) resetam um nível mais cedo.
+    </Note>
   </Step>
   <Step title="Efeitos do Reset">
-    Cada reset aplica os seguintes modificadores:
-
-    | Efeito           | Valor   |
-    |------------------|---------|
-    | Bônus de Dano    | +15%    |
-    | Bônus de Efeitos | +15%    |
-    | Penalidade de XP | -25%    |
+    Cada reset concede **+15% de dano** e **+15% de efeitos** ao galo. A cada 5 resets, o galo também passa a ganhar mais XP por treino.
   </Step>
-  <Step title="Evolução aos 5 Resets">
-    Ao alcançar **5 resets**, seu galo pode ser **evoluído**, ganhando:
+  <Step title="Evolução aos 10 Resets">
+    Ao alcançar **10 resets**, seu galo pode ser **evoluído** (custa AsuraCoins), ganhando:
 
     - **+150 de HP máximo**
     - Um **ataque exclusivo** desbloqueado no nível 30
   </Step>
 </Steps>
 
+<img src="/imagens/upgradegalo.png" alt="Tela de upgrade do galo" />
+
 <Warning>
-  Lembre-se: a cada reset, seu galo perde **25% do XP ganho por treino**. Planeje sua progressão com cuidado!
+  A cada reset, o nível necessário para o próximo aumenta. Quanto mais você reseta, mais treinos são necessários para chegar ao próximo. Planeje sua progressão!
 </Warning>
+
+## Evoluindo a Raridade
+
+Além dos resets, você pode aumentar a raridade de um galo usando **Shards**. Veja mais detalhes na página de [Shards](/pt/shards).

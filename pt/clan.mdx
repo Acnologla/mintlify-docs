@@ -5,19 +5,21 @@ description: "Crie ou entre em um clan, jogue com amigos e conquiste recompensas
 
 # Clan
 
-Clans são grupos de jogadores que treinam e lutam juntos. Participar de um clan oferece **buffs**, **missões exclusivas** e batalhas cooperativas épicas.
+Clans são grupos de jogadores que treinam e lutam juntos. Participar de um clan oferece **buffs de progressão**, **missões exclusivas**, batalhas cooperativas e acesso a Conquistas de Masmorras.
 
 ## Criar e Gerenciar um Clan
 
 <Steps>
   <Step title="Crie seu Clan">
-    Use `j!clan create` para criar um novo clan. O custo é de **1.000 Gold**.
+    Use `j!clan create` para fundar um novo clan. Requer Gold para criação.
   </Step>
   <Step title="Convide Membros">
-    Como Administrador ou Dono, use `j!clan invite @user` para convidar jogadores.
+    Apenas Dono e Admins podem convidar: `j!clan invite @user`
   </Step>
-  <Step title="Sair do Clan">
-    Para sair de um clan, use `j!clan leave`.
+  <Step title="Gerencie sua Hierarquia">
+    - Promova membros para Admin: `j!clan admin`
+    - Rebaixe Admins: `j!clan demote @user`
+    - Expulse membros: `j!clan remove @user`
   </Step>
 </Steps>
 
@@ -25,70 +27,96 @@ Clans são grupos de jogadores que treinam e lutam juntos. Participar de um clan
 
 ## XP e Níveis do Clan
 
-Cada galo que os membros **matam em treinos** gera XP para o clan. Conforme o clan sobe de nível, **todos os membros** recebem buffs permanentes, como:
-
-- **XP extra** por vitória nos treinos
-- **Gold extra** por vitória nos treinos
+Cada galo derrotado em treino pelos membros concede **XP ao clan**. Conforme o clan sobe de nível, todos os membros desbloqueiam buffs cumulativos:
 
 <Info>
-  Os buffs de clan se acumulam com outros bônus que você já possui!
+  Os buffs variam entre bônus de XP, Gold por rinha, mais treinos por dia, maior chance de galos raros em caixas, chances extras de chaves, mais UserXP por rinha, bônus para pets e muito mais — cada nível desbloqueia um buff diferente.
 </Info>
+
+<Note>
+  Os buffs de clan se acumulam com todos os outros bônus que você já possui!
+</Note>
 
 ---
 
-## Missão Mensal do Clan
-
-Todo mês, o clan recebe uma missão especial:
+## Missão Mensal
 
 <Card title="Missão: Matar 20.000 Galos" icon="trophy">
-  Trabalhe junto com seus companheiros de clan para completar a missão mensal. A recompensa inclui **grandes quantidades de XP e Gold** para todos os membros!
+  Todo mês o clan recebe uma missão especial. Trabalhe junto com seus companheiros para completá-la e garanta recompensas massivas de XP e Gold para todos os membros!
 </Card>
 
 ---
 
 ## Upgrades do Clan
 
-Caso o clan possua gold no banco, o Dono ou Administradores podem investir em melhorias com `j!clan upgrade`:
+Com Gold no banco do clan, o Dono ou Admins podem investir em melhorias com `j!clan upgrade`:
 
-| Upgrade                      | Efeito                              |
-|------------------------------|-------------------------------------|
-| Aumento de Membros           | Permite adicionar mais jogadores    |
-| Recompensa da Missão         | Aumenta o Gold/XP da missão mensal  |
+| Upgrade               | Efeito                                          |
+|-----------------------|-------------------------------------------------|
+| Aumento de Membros    | Permite adicionar mais jogadores ao clan        |
+| Recompensa da Missão  | Aumenta o Gold e XP da missão mensal            |
+| HP do Boss            | Aumenta o HP do boss da Clan Battle + bônus nas recompensas |
 
 ---
 
-## Batalha do Clan
+## Clan Battle
 
-Um evento cooperativo exclusivo para membros do clan!
-
-<Info>
-  **Comando:** `j!clan battle`
-</Info>
+Evento cooperativo exclusivo para membros do clan.
 
 <Steps>
   <Step title="Inicie a Batalha">
-    O Dono ou Administrador inicia a batalha do clan com `j!clan battle`.
+    O Dono ou Admin inicia com `j!clan battle`.
   </Step>
   <Step title="Todos Contribuem">
-    Durante **3 dias**, todos os membros podem lutar contra o **Galo Térmico** — um boss com muita vida.
+    Durante **3 dias**, todos os membros podem lutar contra o boss do clan — o **Galo Térmico** ou o **Lupus**.
   </Step>
   <Step title="Colete as Recompensas">
-    Ao final dos 3 dias (ou ao matar o boss antes), cada membro recebe **XP e Gold proporcional ao dano** que contribuiu.
+    Ao final dos 3 dias (ou ao derrotar o boss antes), cada membro recebe XP e Gold **proporcional ao dano contribuído**.
   </Step>
 </Steps>
 
 <Tip>
-  Quanto mais dano você der ao Galo Térmico, maior será sua recompensa individual!
+  Quanto mais dano você der ao boss, maior será sua recompensa individual!
 </Tip>
 
 ---
 
-## Comandos do Clan
+## Conquest — Masmorras de Clan
 
-| Comando                  | Função                                    |
-|--------------------------|-------------------------------------------|
-| `j!clan create`          | Cria um novo clan (custa 1.000 Gold)      |
-| `j!clan invite @user`    | Convida um jogador para o clan            |
-| `j!clan leave`           | Sai do clan atual                         |
-| `j!clan upgrade`         | Compra upgrades para o clan               |
-| `j!clan battle`          | Inicia a batalha do clan                  |
+<Info>
+  As Masmorras são batalhas competitivas entre clans por controle de território, gerando recompensas periódicas.
+</Info>
+
+- A cada período, novas masmorras aparecem aleatoriamente
+- O primeiro clan a ocupar uma masmorra vira o dono e aloca defensores
+- Clans rivais podem **desafiar** masmorras ocupadas com um intervalo mínimo entre invasões
+- Cada invasão tem duração limitada e exige vencer a maioria das batalhas de defesa para conquistar
+- Após um período de controle, todos os membros do clan dono recebem Gold e XP baseados na dificuldade da masmorra
+- Clans podem possuir várias masmorras, mas cada defensor só pode estar em uma
+
+**Comandos:**
+| Comando              | Função                              |
+|----------------------|-------------------------------------|
+| `j!clan conquest`    | Prioridade de defesa                |
+| `j!conquest battle`  | Batalhar pela masmorra              |
+| `j!conquest view`    | Ver masmorras disponíveis           |
+| `j!conquest info`    | Ver masmorras dominadas pelo clan   |
+
+---
+
+## Todos os Comandos do Clan
+
+| Comando                | Função                                    |
+|------------------------|-------------------------------------------|
+| `j!clan create`        | Cria um novo clan                         |
+| `j!clan invite @user`  | Convida um jogador                        |
+| `j!clan leave`         | Sai do clan                               |
+| `j!clan remove @user`  | Expulsa um membro                         |
+| `j!clan admin`         | Promove membro para Admin                 |
+| `j!clan demote @user`  | Rebaixa um Admin                          |
+| `j!clan upgrade`       | Compra upgrades para o clan               |
+| `j!clan battle`        | Inicia a batalha do clan                  |
+| `j!clan mission`       | Visualiza a missão do clan                |
+| `j!clan view`          | Informações gerais do clan                |
+| `j!clan deposit`       | Deposita Gold no banco do clan            |
+| `j!clan bank`          | Visualiza o banco do clan                 |

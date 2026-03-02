@@ -1,0 +1,86 @@
+---
+title: "Rankings do Bot"
+description: "Veja os maiores jogadores em diferentes categorias do Asura Bot."
+---
+
+# Rankings do Bot
+
+Os Rankings listam e classificam os maiores jogadores em diversas áreas do bot. Quer saber quem é o mais forte, o mais rico ou o mais ativo? É aqui.
+
+## Rankings Disponíveis
+
+<CardGroup cols={2}>
+  <Card title="Galo mais forte" icon="sword">
+    Maior nível/força de galo.
+
+    `j!rank user level`
+  </Card>
+  <Card title="Maior fortuna" icon="coins">
+    Maior quantidade de Gold armazenado.
+
+    `j!rank user money`
+  </Card>
+  <Card title="Mais vitórias" icon="trophy">
+    Maior quantidade de vitórias contabilizadas na conta.
+
+    `j!rank user wins`
+  </Card>
+  <Card title="Dungeon" icon="dungeon">
+    Maior quantidade de andares completados na Dungeon.
+
+    `j!rank user players`
+  </Card>
+  <Card title="Portais" icon="circle-dot">
+    Maior quantidade de portais completados.
+
+    `j!rank user portal`
+  </Card>
+  <Card title="AsuraCoins" icon="gem">
+    Maior quantidade de AsuraCoins armazenados.
+
+    `j!rank user asuracoins`
+  </Card>
+  <Card title="Pets" icon="dove">
+    Maior nível de pet.
+
+    `j!rank user pets`
+  </Card>
+  <Card title="Elo Ranqueado" icon="medal">
+    Maior quantidade de Elo obtida na Ranqueada.
+
+    `j!ranked rank`
+  </Card>
+</CardGroup>
+
+---
+
+## Ranking por Galo Específico
+
+Você pode ver o ranking de resets de um **galo específico**:
+
+```
+j!rank user level [nome do galo]
+```
+
+**Exemplo:**
+```
+j!rank user level black
+```
+
+Isso mostra quem tem mais resets no galo "Black" do servidor.
+
+---
+
+## Todos os Comandos de Ranking
+
+| Comando                           | Função                                       |
+|-----------------------------------|----------------------------------------------|
+| `j!rank user level`               | Galos mais fortes                            |
+| `j!rank user money`               | Jogadores com mais Gold                      |
+| `j!rank user wins`                | Jogadores com mais vitórias                  |
+| `j!rank user players`             | Maiores progressores da Dungeon              |
+| `j!rank user portal`              | Mais portais completados                     |
+| `j!rank user asuracoins`          | Mais AsuraCoins armazenados                  |
+| `j!rank user pets`                | Pets de maior nível                          |
+| `j!rank user level [nome]`        | Resets de um galo específico                 |
+| `j!ranked rank`                   | Ranking geral de Elo da Ranqueada            |

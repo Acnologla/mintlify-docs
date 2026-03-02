@@ -5,16 +5,18 @@ description: "Suba de rank, ganhe Elo e conquiste prêmios exclusivos nas batalh
 
 # Rinhas Ranqueadas
 
-As **Rinhas Ranqueadas** são o modo competitivo oficial do Asura Bot. Aqui você pode provar o valor do seu galo, subir no ranking geral de jogadores e conquistar prêmios valiosos.
+As **Rinhas Ranqueadas** são o modo competitivo oficial do Asura Bot. Prove o valor do seu galo, suba no ranking e conquiste prêmios valiosos — incluindo badges exclusivas.
 
 ## Como Participar
 
 <Steps>
   <Step title="Inicie uma Batalha Ranqueada">
-    Use `/ranked battle` para entrar na fila. Outros jogadores precisam usar o mesmo comando ao mesmo tempo para que a batalha comece.
+    Use `/ranked battle` para entrar na fila. Você pode enfrentar **jogadores reais** ou **bots baseados em jogadores reais**.
   </Step>
   <Step title="Ganhe Elo">
-    Cada **vitória** garante Elo para sua conta. Derrotas podem custar Elo também — jogue bem!
+    Cada **vitória** garante Elo. Derrotas também podem custar — jogue com estratégia!
+
+    Use `/ranked history` para ver suas lutas anteriores e analisar seu desempenho.
   </Step>
   <Step title="Suba de Rank">
     Ao acumular Elo suficiente, você avança para o próximo Rank e recebe **grandes recompensas**.
@@ -25,16 +27,17 @@ As **Rinhas Ranqueadas** são o modo competitivo oficial do Asura Bot. Aqui voc�
 
 ## Sistema de Elo e Ranks
 
-| Rank         | Elo Necessário (aproximado) | Recompensas ao Subir |
-|--------------|-----------------------------|----------------------|
-| Bronze       | Inicial                     | Recompensas básicas  |
-| Prata        | —                           | Recompensas médias   |
-| Ouro         | —                           | Recompensas altas    |
-| Platina      | —                           | Recompensas premium  |
-| Diamante     | —                           | Recompensas máximas  |
+| Rank      | Recompensas ao Subir                          |
+|-----------|-----------------------------------------------|
+| Bronze    | Recompensas básicas                           |
+| Prata     | Recompensas médias                            |
+| Ouro      | Recompensas altas                             |
+| Platina   | Recompensas premium                           |
+| Diamante  | Recompensas máximas                           |
+| Mestre    | Recompensas exclusivas + **badge especial**   |
 
 <Info>
-  Os valores exatos de Elo para cada rank podem variar. Confira o **Servidor Oficial** para as informações mais atualizadas!
+  O Rank **Mestre** é o nível mais alto da ranqueada. Alcançá-lo garante a badge exclusiva **Master** no seu perfil.
 </Info>
 
 ---
@@ -43,16 +46,16 @@ As **Rinhas Ranqueadas** são o modo competitivo oficial do Asura Bot. Aqui voc�
 
 <CardGroup cols={2}>
   <Card title="Evolua seu Galo" icon="arrow-up">
-    Galos com mais resets e skills otimizadas têm vantagem nas batalhas ranqueadas.
+    Galos com mais resets e skills otimizadas têm grande vantagem nas batalhas ranqueadas.
   </Card>
   <Card title="Use as Skills Certas" icon="wand">
-    Configure uma skillset específica para PvP com `j!skills` antes de entrar em batalhas ranqueadas.
+    Configure uma skillset específica para PvP com `j!skills` antes de entrar na ranqueada.
   </Card>
   <Card title="Invista em Upgrades" icon="chart-line">
-    Atributos e Upgrades de conta afetam seu desempenho nas rinhas ranqueadas.
+    Atributos e Upgrades de conta afetam diretamente seu desempenho em batalhas.
   </Card>
   <Card title="Pratique na Arena" icon="shield">
-    Use a Arena para praticar e entender o meta antes de arriscar seu Elo.
+    Use a Arena para praticar e entender o meta antes de arriscar seu Elo na ranqueada.
   </Card>
 </CardGroup>
 
@@ -60,8 +63,17 @@ As **Rinhas Ranqueadas** são o modo competitivo oficial do Asura Bot. Aqui voc�
 
 ## Ranking Geral
 
-Além dos Ranks individuais, existe um **ranking geral de jogadores** — veja quem são os melhores do servidor e do bot inteiro! Tente chegar ao topo e aparecer no placar.
+Além dos Ranks individuais, há um **ranking geral** de jogadores — veja quem são os melhores do servidor e do bot inteiro!
 
-<Tip>
-  Use `/ranked battle` (com barra) para entrar na fila do modo ranqueado.
-</Tip>
+Use `j!ranked rank` para ver o ranking geral de Elo.
+
+---
+
+## Comandos
+
+| Comando            | Função                                      |
+|--------------------|---------------------------------------------|
+| `/ranked battle`   | Entra na fila de batalha ranqueada          |
+| `/ranked history`  | Vê seu histórico de lutas ranqueadas        |
+| `j!ranked view`    | Vê seu Elo e rank atual                     |
+| `j!ranked rank`    | Vê o ranking geral de Elo                   |

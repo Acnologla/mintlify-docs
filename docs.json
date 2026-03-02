@@ -1,50 +1,78 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
   "name": "Asura Bot",
-  "theme": "mint",
-  "favicon": "/favicon.svg",
   "logo": {
-    "light": "/logo.webp",
-    "dark": "/logo.webp"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
+  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#8B5CF6",
     "light": "#A78BFA",
-    "dark": "#6D28D9"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Servidor de Suporte",
-        "href": "https://discord.gg/CfkBZyVsd7"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Adicionar ao Servidor",
-      "href": "https://discordapp.com/oauth2/authorize?client_id=470684281102925844&scope=applications.commands%20bot&permissions=8"
+    "dark": "#6D28D9",
+    "background": {
+      "dark": "#0F0A1E"
     }
   },
+  "topbarLinks": [
+    {
+      "name": "Servidor de Suporte",
+      "url": "https://discord.gg/CfkBZyVsd7"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Adicionar ao Servidor",
+    "url": "https://discordapp.com/oauth2/authorize?client_id=470684281102925844&scope=applications.commands%20bot&permissions=8"
+  },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Início",
+        "language": "pt",
+        "default": true,
         "groups": [
           {
             "group": "Início",
             "pages": ["pt/introducao"]
           },
           {
-            "group": "Guias",
+            "group": "Galos & Progressão",
             "pages": [
               "pt/galos",
-              "pt/economia",
-              "pt/tipos-de-luta",
+              "pt/shards",
+              "pt/ovos",
+              "pt/galinheiro",
+              "pt/pets"
+            ]
+          },
+          {
+            "group": "Modos de Jogo",
+            "pages": ["pt/tipos-de-luta", "pt/rinhas-ranqueadas"]
+          },
+          {
+            "group": "Itens & Combate",
+            "pages": [
+              "pt/itens",
               "pt/itens-e-dungeons",
-              "pt/atributos-e-upgrades",
+              "pt/consumiveis",
+              "pt/runas"
+            ]
+          },
+          {
+            "group": "Economia & Social",
+            "pages": [
+              "pt/economia",
               "pt/clan",
               "pt/lootbox-pity-shop",
-              "pt/rinhas-ranqueadas",
+              "pt/battlepass"
+            ]
+          },
+          {
+            "group": "Conta & Perfil",
+            "pages": [
+              "pt/atributos-e-upgrades",
+              "pt/badges",
+              "pt/conquistas",
+              "pt/historico-batalhas",
+              "pt/ranks",
               "pt/cosmeticos"
             ]
           }

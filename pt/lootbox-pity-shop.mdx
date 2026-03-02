@@ -7,32 +7,55 @@ description: "Saiba como conseguir novos galos, cosméticos e itens através das
 
 Esta seção cobre os três principais sistemas de aquisição de conteúdo do Asura Bot.
 
+<img src="/imagens/store.jpg" alt="Shop do Asura Bot" />
+
 ---
 
 ## Lootboxes
 
-As Lootboxes são a **principal forma de conseguir novos galos** no bot. Você pode obtê-las de duas formas:
+As Lootboxes são a **principal forma de conseguir novos galos** no bot.
+
+### Como Obter Lootboxes
 
 - Completando andares da **Dungeon**
-- Comprando com **Gold**
+- Participando de **Portais**
+- Completando **Challenges**
+- Ganhando em **Torneios**
+- Participando de **Raids**
+- Progredindo na **Tower**
+- Comprando com **Gold** (`j!lootbox buy`)
 
-### Comandos de Lootbox
+### Comandos
 
-| Comando             | Função                              |
-|---------------------|-------------------------------------|
-| `j!lootbox buy`     | Compra uma ou mais lootboxes        |
-| `j!lootbox open`    | Abre suas lootboxes                 |
-| `j!lootbox view`    | Visualiza suas lootboxes disponíveis |
+| Comando              | Função                               |
+|----------------------|--------------------------------------|
+| `j!lootbox buy`      | Compra lootboxes com Gold            |
+| `j!lootbox open`     | Abre suas lootboxes disponíveis      |
+| `j!lootbox view`     | Visualiza quantas caixas você tem    |
+| `j!lootbox sell`     | Vende lootboxes por Gold             |
+
+---
+
+## Auto Sell
+
+Um sistema pensado para quem abre muitas lootboxes e não quer que itens indesejados encham o inventário.
+
+- Use `j!autosell` para configurar as raridades que serão **vendidas automaticamente** ao receber
+- Ideal para quem busca apenas galos de raridades específicas
+
+<Warning>
+  Evite colocar raridades Lendária, Mítica e Divina no autosell — esses galos são difíceis de conseguir e valem mais quando trocados com outros jogadores.
+</Warning>
 
 ---
 
 ## Sistema de Pity
 
-O **Pity** é o sistema de sorte do bot — ele influencia suas chances de conseguir galos, cosméticos e itens de **raridades mais altas**.
+O **Pity** é o sistema de sorte do bot — influencia suas chances de conseguir galos e itens de **raridades mais altas**.
 
 <Steps>
   <Step title="Como Aumentar o Pity">
-    Abra Lootboxes! Cada caixa aberta aumenta seu Pity progressivamente.
+    Abra Lootboxes de galos. Cada caixa aberta aumenta progressivamente seu Pity.
   </Step>
   <Step title="Quando o Pity é Resetado">
     O Pity é **zerado automaticamente** quando você recebe um item da **maior raridade possível** disponível naquela caixa.
@@ -40,38 +63,34 @@ O **Pity** é o sistema de sorte do bot — ele influencia suas chances de conse
 </Steps>
 
 <Info>
-  Quanto mais Pity acumulado, maior sua chance de conseguir itens raros. Não pare de abrir caixas!
+  **Importante:** A **Lootbox Cosmética** **não** altera o Pity. Apenas a lootbox de galos influencia o sistema.
 </Info>
 
 ---
 
 ## Shop (Loja)
 
-O Shop é a loja oficial do bot, acessada com `j!shop`.
-
-### Como Funciona
+A loja oficial do bot, acessada com `j!shop`.
 
 <CardGroup cols={2}>
   <Card title="Atualização" icon="clock">
-    A loja atualiza seus produtos a cada **10 horas**, trazendo novos itens disponíveis.
+    A loja atualiza seus produtos a cada **6 horas**, renovando o catálogo disponível.
   </Card>
-  <Card title="Variedade" icon="store">
-    A loja oferece XP, galos, cosméticos, itens e **AsuraCoins**.
+  <Card title="Desconto Aleatório" icon="percent">
+    Existe chance de qualquer produto aparecer com **20% de desconto** — pode valer esperar!
   </Card>
 </CardGroup>
 
-### Desconto Aleatório
-
-<Tip>
-  Os produtos do Shop geralmente vêm com preços **acima do valor real**. No entanto, existe uma chance de qualquer produto aparecer com **20% de desconto** aleatório — pode valer a pena esperar pelo item certo!
-</Tip>
-
 ### Produtos Disponíveis
 
-| Categoria    | Exemplos                        |
-|--------------|---------------------------------|
-| Recursos     | XP, Gold                        |
-| Galos        | Galos de diversas raridades     |
-| Cosméticos   | Skins e Backgrounds             |
-| Itens        | Itens de batalha                |
-| Moeda Premium| AsuraCoins                      |
+| Categoria      | Exemplos                            |
+|----------------|-------------------------------------|
+| Recursos       | XP, User XP, Gold, Shards           |
+| Galos          | Diversas raridades                  |
+| Cosméticos     | Skins e Backgrounds                 |
+| Itens          | Itens de batalha                    |
+| Moeda Premium  | AsuraCoins                          |
+
+<Note>
+  Os produtos do Shop costumam vir com preços acima do valor de mercado. O desconto aleatório de 20% pode tornar a compra mais vantajosa — avalie antes de comprar!
+</Note>

@@ -4,6 +4,8 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "theme": "mint",
+
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#8B5CF6",
@@ -31,9 +33,7 @@
         "groups": [
           {
             "group": "Início",
-            "pages": [
-              "pt/introducao"
-            ]
+            "pages": ["pt/introducao"]
           },
           {
             "group": "Guias",

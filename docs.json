@@ -5,7 +5,7 @@
     "dark": "/logo.webp"
   },
   "theme": "mint",
-  "favicon": "/favicon.webp",
+  "favicon": "/logo.webp",
   "colors": {
     "primary": "#8B5CF6",
     "light": "#A78BFA",
